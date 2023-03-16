@@ -10,9 +10,13 @@ namespace Entity
     {
         [Header("敌人的基本属性")]
         [SerializeField] protected float speed;
-        [SerializeField] protected float health;
+        [SerializeField] protected float health;//生命值
+        [SerializeField] protected float maxHealth;//最大生命值
         [SerializeField] protected bool isCanAction = false;
+        private float injuryInterval = 0.05f;//受伤间隔
+        private float injuryTimer = 0f;//受伤计时器
 
+        public float MaxHealth => maxHealth;
         public float Health => health;
 
         [Header("移动线路")]
@@ -27,6 +31,7 @@ namespace Entity
 
         private void Update()
         {
+            injuryTimer -= Time.deltaTime;
             if(isCanAction)
                 GoToTarget();
         }
@@ -41,6 +46,20 @@ namespace Entity
             isCanAction = true;
         }
 
+        //被击中扣血
+        public void Injured(float damage = 0, float deceleration = 1)
+        {
+            if (!isCanAction && injuryTimer < 0f) return;
+            this.health -= damage;
+            this.speed *= deceleration;//减速，以百分比减少0-0.5-1s
+            injuryTimer = injuryInterval;
+
+            if (health <= 0)
+            {
+                isCanAction = false;
+                Destroy(gameObject);
+            }
+        }
 
 //私有方法//
         

@@ -52,9 +52,12 @@ TagManager:
   - name: BackGround
     uniqueID: 2889626885
     locked: 0
-  - name: Front
-    uniqueID: 2862508419
+  - name: Back
+    uniqueID: 2866747835
     locked: 0
   - name: Middle
     uniqueID: 3298973753
+    locked: 0
+  - name: Front
+    uniqueID: 2862508419
     locked: 0
