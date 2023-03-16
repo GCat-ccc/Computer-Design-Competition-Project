@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 00fb8cddd66b3874783903947484ee16
+guid: 6240c7543e9938c4397bc340f6e08563
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -114,7 +114,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: EnemyHealthBar_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 886.5
+        width: 1477
+        height: 295.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153df4b215873e8499f06d2a9ac9549d
+      internalID: 1717223464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyHealthBar_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 591.5
+        width: 1477
+        height: 295.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c35c468b198c224d90907364dab18b5
+      internalID: -1327990605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyHealthBar_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 296.5
+        width: 1477
+        height: 295.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d520f406b3ed774bb075f44745bc512
+      internalID: -1496691668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyHealthBar_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.5
+        width: 1477
+        height: 295.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27eb7dbdb336ba24aaa3e57282e0ad92
+      internalID: 2021261699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -125,7 +209,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      EnemyHealthBar_3: 2021261699
+      EnemyHealthBar_0: 1717223464
+      EnemyHealthBar_2: -1496691668
+      EnemyHealthBar_1: -1327990605
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
