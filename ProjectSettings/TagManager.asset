@@ -12,6 +12,7 @@ TagManager:
   - WangWeiYi
   - Bullet
   - Enemy
+  - Tcm
   layers:
   - Default
   - TransparentFX
